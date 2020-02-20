@@ -317,7 +317,6 @@ hr {
 
 
 .youremail {
-  float: left;
   font-family: BeausiteReg;
   font-size: 18px;
   border-style: none !important;
@@ -496,7 +495,7 @@ hr {
   .info {
     min-width: 100%;
     /*float: left;*/
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   #date {
