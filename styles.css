@@ -1,0 +1,1079 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    /* max-height: 300vw; */
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #arrow {
+      display: none;
+    }
+    .container {
+      height: 300vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .page {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .page:nth-last-of-type(-n+2) {
+      display: none;
+    }
+
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* HYPERLINK */
+
+#artists a:link {
+  color: black;
+}
+
+#artists a:visited {
+  color: #AD413A;
+}
+
+#artists a:hover {
+  color: #CCFDC5;
+}
+
+#home a:link {
+  color: black;
+}
+
+#home a:hover {
+  color: #CCFDC5;
+}
+
+#home a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#p3 a:link {
+  color: #CCFDC5;
+}
+
+#p3 a:hover {
+  color: #FFFFCC;
+}
+
+#p3 a:visited {
+  color: #CCFDC5;
+}
+
+.contentAccordion a:link {
+  color: white;
+}
+
+.contentAccordion a:visited {
+  color: white;
+}
+
+.contentAccordion a:hover {
+  color: #CCFDC5;
+}
+
+a:hover {
+  color: #CCFDC5;
+}
+
+a:active {
+  color: #EEEDF0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.content-item {
+  display: block;
+}
+
+.pointer {cursor: pointer;}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #CCFDC5;
+}
+
+::selection {
+  color: black;
+  background: #CCFDC5;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: DroulersReg;
+  src: url('Droulers-Regular.otf');
+}
+
+@font-face {
+  font-family: BeausiteReg;
+  src: url('BeausiteClassic-Regular.otf');
+}
+
+
+.heading {
+  padding-bottom: 20px;
+  font-family: BeausiteReg;
+  font-size: 18px;
+}
+
+.body {
+  font-family: BeausiteReg;
+  font-size: 16px;
+  margin-bottom: 10%;
+}
+
+.small {
+  font-family: BeausiteReg;
+  font-size: 12px;
+}
+
+.smallSerif {
+  font-family: DroulersReg;
+  font-size: 18px;
+  margin-bottom: 2%;
+  letter-spacing: 0.5px;
+}
+
+.smallWhite {
+  color: white;
+  font-family: BeausiteReg;
+  font-size: 11.2px;
+}
+
+.smallSerifWhite {
+  color: white;
+  font-family: DroulersReg;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+/* STRUCTURE */
+
+.container {
+  position: relative;
+  height: 100vw;
+  display: flex;
+  transition: none;
+}
+
+.page {
+  width: 75vw;
+  height: 100vh;
+  position: relative;
+}
+
+.page1 {
+  /* position: relative;
+  background-color: green; */
+}
+
+
+.page2 {
+  background-color: white;
+}
+
+
+.page3 {
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100vw;
+        display: block;
+    }
+    .page {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+#arrow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25vw;
+  height: 100%;
+  margin: 0;
+
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 99;
+}
+
+/* SLIDE 1 */
+
+.videoBG {
+  /*
+  max-width: 75vw;
+  height: 100%;
+  overflow: hidden;
+  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.vid {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.contentHP {
+  min-width: 70%;
+  margin: 8% 12%;
+  position: relative;
+  z-index: 1000000;
+
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.row1 {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  max-width: 25%;
+  height: auto;
+  /*float: left;*/
+}
+
+.row2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.cta {
+  min-width: 50%;
+  /*float: left;*/
+  margin-right: 5%;
+}
+
+
+.form {
+  border-radius: 15px;
+  width: auto;
+  margin-top: 90px;
+  padding: 20px;
+  border: 2px solid black;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+hr {
+  display: block;
+  border: 1px solid black;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.subscribeTonewsletter {
+  font-family: DroulersReg;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+
+.youremail {
+  float: left;
+  font-family: BeausiteReg;
+  font-size: 18px;
+  border-style: none !important;
+  color:rgba(0,0,0,1)!important;
+  background-color: rgba(0,0,0,0)!important;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribe {
+  font-family: BeausiteReg;
+  font-size: 18px;
+  border-style: none !important;
+  background-color: rgba(0,0,0,0)!important;
+  padding-left: 0px;
+  padding-right: 8px;
+  margin-top: 20px;
+  pointer-events: auto;
+}
+
+.joinBox {
+  border-radius: 15px;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.joinBox:hover {
+  border-radius: 15px;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+#join {
+  font-family: BeausiteReg;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  margin-top: -4px;
+
+}
+
+
+.info {
+  max-width: 40%;
+  height: 100%;
+  /*float: right;*/
+  margin-top: 80px;
+  position: relative;
+}
+
+#date {
+  font-family: DroulersReg;
+  font-size: 51px;
+  /*margin-bottom: 15px;*/
+}
+
+
+#days {
+  display: flex;
+  margin: 0;
+}
+
+#from {
+  float: left;
+  z-index: 2;
+}
+
+#toArrow {
+  float: right;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  max-width: 80px;
+  height: 25px;
+}
+
+
+#arrowIcon {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 99;
+}
+
+#to {
+  float: right;
+  z-index: 2;
+}
+
+#month {
+  font-family: DroulersReg;
+  margin-bottom: 13px;
+}
+
+#location {
+  font-family: DroulersReg;
+  font-size: 21px;
+  margin-bottom: 13px;
+}
+
+
+#contact {
+  font-family: BeausiteReg;
+  font-size: 16px;
+  margin-top: 21px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #videoBG {
+    max-width: 100vw;
+    height: 220vw;
+  }
+
+  #contentHP {
+    min-width: 70%;
+    margin: 11% 12%;
+  }
+
+  .row1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    max-width: 60%;
+    display: block;
+    margin:0 20%;
+  }
+
+  .row2 {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .cta {
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    border-radius: 15px;
+    width: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid black;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .subscribeTonewsletter[data-abbr]::after {
+      content: attr(data-abbr);
+  }
+
+  /* Hide the original label */
+  .subscribeTonewsletter > span { display: none; }
+
+  #join {
+    font-family: BeausiteReg;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: -2px;
+
+  }
+
+  .info {
+    min-width: 100%;
+    /*float: left;*/
+    margin-top: 35px;
+  }
+
+  #date {
+    font-family: DroulersReg;
+    font-size: 36px;
+  }
+
+  #toArrow {
+    max-width: 55px;
+    height: 25px;
+  }
+
+  #location {
+    font-family: DroulersReg;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  #contact {
+    font-family: BeausiteReg;
+    font-size: 14px;
+  }
+}
+
+
+
+/* BIG SCREEN */
+
+@media (min-width: 1920px) {
+
+  #videoBG {
+    max-width: 75vw;
+    height: 100vw;
+  }
+
+  #contentHP {
+    min-width: 70%;
+    margin: 15.5% 15%;
+  }
+
+  .row1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    max-width: 25%;
+    height: auto;
+    /*float: left;*/
+  }
+
+  .row2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+  }
+
+  .cta {
+    min-width: 50%;
+    float: left;
+    margin-right: -25px;
+  }
+
+  .form {
+    border-radius: 15px;
+    width: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .subscribeTonewsletter {
+    font-family: DroulersReg;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .youremail {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .subscribe {
+    font-size: 26px;
+    padding-left: 0px;
+    padding-right: 8px;
+    margin-top: 20px;
+  }
+
+  #join {
+    font-family: BeausiteReg;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+
+  }
+
+  .joinBox {
+    width: 100%;
+    height: 80px;
+  }
+
+  .joinBox:hover {
+    width: 100%;
+    height: 80px;
+  }
+
+  .info {
+    min-width: 40%;
+    height: 100%;
+    float: right;
+    margin-top: 90px;
+    position: relative;
+  }
+
+  #date {
+    font-family: DroulersReg;
+    font-size: 52px;
+    /*margin-bottom: 15px;*/
+  }
+
+  #toArrow {
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -6px;
+    max-width: 80px;
+    height: 25px;
+  }
+
+  #location {
+    font-family: DroulersReg;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  #contact {
+    font-family: BeausiteReg;
+    font-size: 21px;
+  }
+}
+
+
+/* SLIDE 2 */
+
+.content2 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 0;
+  margin: 2% 0;
+}
+
+#festival {
+  margin: -1% 1%;
+  font-family: DroulersReg;
+  font-size: 8.1em;
+  max-height: 100%;
+  float: left;
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform: rotate(180deg);
+  padding-left: 20px;
+}
+
+#festivalInfo {
+  max-width: 50%;
+  height: auto;
+  float: right;
+}
+
+.lineUp {
+  margin-top: 50px;
+}
+
+#map {
+  max-width: 100%;
+  height: auto;
+  margin-top: 45px;
+  float: left;
+  margin-top: 25px;
+}
+
+/* COLUMN PAG 2 */
+
+.columnP2a {
+  float: left;
+  width: 39%;
+  padding-right: 40px;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+.columnP2b {
+  float: left;
+  width: 39%;
+  padding-left: 40px;
+  padding-top: 20px;
+  margin-left: -20px;
+  margin-right: -40px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#artists {
+  margin-top: -8px;
+}
+
+
+/* PICS HOVER */
+
+.contents-image-wrapper {
+  opacity: 0;
+  transition: opacity 100ms;
+  overflow: visible;
+  position: absolute;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  margin-left: -0em;
+  margin-top: -0.1em;
+  float: right;
+}
+
+.content-item:hover .contents-image-wrapper {
+  opacity: 1;
+  z-index: 100000;
+}
+
+.contents-image {
+  max-width: 20vw;
+  transform: translate(85%, -30%);
+}
+
+.contents-above {
+  transform: translate(85%, -80%);
+}
+
+
+.contents-text {
+  cursor: pointer;
+}
+
+.read_more  {
+  display: none;
+}
+
+.show {
+   display: block!important;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  #festival {
+    font-family: DroulersReg;
+    font-size: 68px;
+    transform: rotate(270deg);
+    transform-origin: 170% 40%;
+    margin-top: -205px;
+    margin-bottom: -70px;
+    margin-left: -10px;
+
+  }
+
+  #map {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: -11px;
+    float: left;
+
+  }
+
+  .columnP2a {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0px;
+    margin-top: 15px;
+  }
+
+  .columnP2b {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0px;
+  }
+
+  #artists {
+    margin-top: 0px;
+  }
+
+  .content-item:focus .contents-image-wrapper {
+    opacity: 1;
+    z-index: 100000;
+  }
+
+  .contents-image {
+    max-width: 50vw;
+    transform: translate(80%, 0);
+  }
+
+  .contents-above {
+    transform: translate(80%, -100%);
+  }
+
+  .extra_content {
+    display: none;
+  }
+  #read_more {
+    display: block;
+  }
+  .page {
+    /*overflow-y: auto;*/
+    padding: 1px 0;
+  }
+
+  .lineUp {
+    margin-top: 0px;
+  }
+
+  #map {
+    margin-top: 10px;
+  }
+
+  .body {
+    font-family: BeausiteReg;
+    font-size: 18px;
+    margin-top: 5%;
+  }
+
+}
+
+
+
+
+/* BIG SCREEN */
+
+@media (min-width: 1920px) {
+
+  .content2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-left: 0;
+    margin: 2% 0;
+  }
+
+  #festival {
+    margin: 0;
+    font-family: DroulersReg;
+    font-size: 196px;
+    padding-left: 0px;
+    margin-left: -15px;
+  }
+
+  #festivalInfo {
+    max-width: 50%;
+    height: auto;
+    float: right;
+  }
+
+
+  #map {
+    max-width: 100%;
+    height: auto;
+    margin-top: 95px;
+    float: left;
+  }
+
+  /* COLUMN PAG 2 */
+
+  .columnP2a {
+    float: left;
+    width: 39%;
+    padding-right: 40px;
+    padding-top: 10px;
+    margin-left: -5px;
+  }
+
+  .columnP2b {
+    float: left;
+    width: 39%;
+    padding-left: 40px;
+    padding-top: 10px;
+    margin-left: -20px;
+    margin-right: -40px;
+  }
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .smallSerif {
+    font-family: DroulersReg;
+    font-size: 24px;
+    margin-bottom: 4%;
+  }
+
+  .body {
+    font-family: BeausiteReg;
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 10%;
+  }
+
+
+  #artists {
+    margin-top: -5px;
+  }
+
+
+  /* PICS HOVER */
+
+  .contents-image-wrapper {
+    opacity: 0;
+    transition: opacity 100ms;
+    overflow: visible;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    margin-left: -0em;
+    margin-top: -0.1em;
+    float: right;
+  }
+
+  .content-item:hover .contents-image-wrapper {
+    opacity: 1;
+    z-index: 100000;
+  }
+
+  .contents-image {
+    max-width: 20vw;
+    transform: translate(85%, -30%);
+  }
+
+  .contents-above {
+    transform: translate(85%, -80%);
+  }
+
+
+  .contents-text {
+    cursor: pointer;
+  }
+
+  .read_more  {
+    display: none;
+  }
+
+  .show {
+     display: block!important;
+  }
+
+  .lineUp {
+    margin-top: 70px;
+  }
+
+  #map {
+    margin-top: 75px;
+  }
+
+}
+
+/* SLIDE 3 */
+
+.content3 {
+  margin: -3px 20px;
+}
+
+/* COLUMN PAG 3 */
+
+.columnP3 {
+  float: left;
+  width: 33%;
+  padding-right: 2%;
+}
+
+#column3P3 {
+  margin-top: 0px;
+  padding-right: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.location {
+  max-height: 140px;
+  overflow: auto;
+}
+
+.contentAccordion {
+  margin-top: 5px !important;
+}
+
+.contentCollapsed {
+  margin-top: 20px;
+}
+
+#contactsCollapsed {
+  margin-bottom: -30px;
+}
+
+#infoCollapsed {
+  /*padding-top: 25px;*/
+}
+
+#accordionCollapsed {
+  padding-bottom: 20px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+  .content3 {
+    margin: 20px;
+  }
+
+  .columnP3 {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .smallWhite {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 1.4;
+  }
+
+  .smallSerifWhite {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* BIG SCREEN */
+
+@media (min-width: 1920px) {
+
+  .smallWhite {
+    font-size: 14.5px;
+    letter-spacing: 0.25px;
+    line-height: 1.4;
+  }
+
+  .smallSerifWhite {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    }
+  }
+
+  #column3P3 {
+    margin-top: 0px;
+  }
+
+}
