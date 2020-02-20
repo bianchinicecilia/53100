@@ -763,6 +763,20 @@ hr {
 
 /* MOBILE */
 
+@media (max-width: 375px) {
+
+  #festival {
+    font-family: DroulersReg;
+    font-size: 350%;
+    transform: rotate(270deg);
+    transform-origin: 170% 40%;
+    margin-top: -170px;
+    margin-bottom: -60px;
+    margin-left: -10px;
+
+  }
+}
+
 @media (max-width: 600px) {
 
   #festival {
