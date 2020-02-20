@@ -767,11 +767,11 @@ hr {
 
   #festival {
     font-family: DroulersReg;
-    font-size: 68px;
+    font-size: 56px;
     transform: rotate(270deg);
     transform-origin: 170% 40%;
-    margin-top: -205px;
-    margin-bottom: -70px;
+    margin-top: -170px;
+    margin-bottom: -60px;
     margin-left: -10px;
 
   }
