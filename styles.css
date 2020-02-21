@@ -434,6 +434,10 @@ hr {
 
 @media (max-width: 600px) {
 
+  .container {
+  transform: translate(0) !important;
+  }
+
   #videoBG {
     max-width: 100vw;
     height: 220vw;
@@ -1031,6 +1035,12 @@ hr {
 }
 
 /* MOBILE */
+
+@media (min-width: 601) {
+  #accordionCollapsed {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 600px) {
 
