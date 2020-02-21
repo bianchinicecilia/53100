@@ -255,7 +255,7 @@ a:visited {
 
 .contentHP {
   min-width: 70%;
-  margin: 8% 12%;
+  margin: 10% 12%;
   position: relative;
   z-index: 1000000;
 
@@ -292,7 +292,7 @@ a:visited {
 .form {
   border-radius: 15px;
   width: auto;
-  margin-top: 90px;
+  margin-top: 70px;
   padding: 20px;
   border: 2px solid black;
   flex-direction: column;
@@ -369,7 +369,7 @@ hr {
   max-width: 40%;
   height: 100%;
   /*float: right;*/
-  margin-top: 80px;
+  margin-top: 60px;
   position: relative;
 }
 
@@ -495,7 +495,7 @@ hr {
   .info {
     min-width: 100%;
     /*float: left;*/
-    margin-top: 35px;
+    margin-top: 28px;
   }
 
   #date {
