@@ -1036,7 +1036,7 @@ hr {
 
 /* MOBILE */
 
-@media (min-width: 601) {
+@media (min-width: 601px) {
   #accordionCollapsed {
     display: none;
   }
