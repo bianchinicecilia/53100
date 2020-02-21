@@ -528,7 +528,7 @@ hr {
 
 /* BIG SCREEN */
 
-@media (min-width: 1920px) {
+@media (min-width: 1880px) {
 
   #videoBG {
     max-width: 75vw;
@@ -853,7 +853,7 @@ hr {
 
 /* BIG SCREEN */
 
-@media (min-width: 1920px) {
+@media (min-width: 1880px) {
 
   .content2 {
     width: 100%;
@@ -866,7 +866,7 @@ hr {
   #festival {
     margin: 0;
     font-family: DroulersReg;
-    font-size: 196px;
+    font-size: 178px;
     padding-left: 0px;
     margin-left: -15px;
   }
@@ -986,7 +986,9 @@ hr {
 /* SLIDE 3 */
 
 .content3 {
-  margin: -3px 20px;
+  margin: 25px;
+  margin-left: 30px;
+  margin-right: -8px;
 }
 
 /* COLUMN PAG 3 */
@@ -994,10 +996,11 @@ hr {
 .columnP3 {
   float: left;
   width: 33%;
-  padding-right: 2%;
+  padding-right: 3%;
 }
 
 #column3P3 {
+  width: 31%;
   margin-top: 0px;
   padding-right: 0;
 }
@@ -1067,16 +1070,16 @@ hr {
 
 /* BIG SCREEN */
 
-@media (min-width: 1920px) {
+@media (min-width: 1880px) {
 
   .smallWhite {
-    font-size: 14.5px;
+    font-size: 13.2px;
     letter-spacing: 0.25px;
     line-height: 1.4;
   }
 
   .smallSerifWhite {
-    font-size: 21px;
+    font-size: 19px;
     letter-spacing: 0.5px;
     }
 
