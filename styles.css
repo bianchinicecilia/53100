@@ -770,6 +770,17 @@ hr {
    display: block!important;
 }
 
+@media (max-width: 320px) {
+
+  #festival {
+    font-size: 56px;
+    margin-top: -165px;
+    margin-bottom: -60px;
+
+  }
+
+}
+
 /* MOBILE */
 
 @media (max-width: 600px) {
@@ -1042,6 +1053,28 @@ hr {
   padding-bottom: 20px;
 }
 
+@media (max-width: 1280px) {
+
+  .content3 {
+    margin: 20px;
+  }
+
+  .columnP3 {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .smallWhite {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .smallSerifWhite {
+    font-size: 16px;
+  }
+
+}
+
 /* MOBILE */
 
 @media (min-width: 601px) {
@@ -1091,17 +1124,6 @@ hr {
 
   #column3P3 {
     margin-top: 0px;
-  }
-
-}
-
-@media (max-width: 320px) {
-
-  #festival {
-    font-size: 56px;
-    margin-top: -165px;
-    margin-bottom: -60px;
-
   }
 
 }
