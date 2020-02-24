@@ -63,12 +63,9 @@ if (screen.width < 600) {
 
 
   // video on mobile low power
-  const videoElement = document.getElementsByClassName('.vid');
-
-  videoElement.addEventListener('suspend', () => {
+  $(".vid").on("suspend", function() {
     $(".bgimg").css("display", "block");
   });
-
-  videoElement.addEventListener('play', () => {
+  $(".vid").on("play", function() {
     $(".bgimg").css("display", "none");
   });
