@@ -63,9 +63,15 @@ if (screen.width < 600) {
 
 
   // video on mobile low power
-  $(".vid").on("suspend", function() {
-    $(".bgimg").css("display", "block");
-  });
-  $(".vid").on("play", function() {
-    $(".bgimg").css("display", "none");
+  document.querySelectorAll('.vid').forEach(el => {
+    el.addEventListener('suspend', () => {
+      querySelectorAll('.bgimg').forEach(bgEl => {
+        bgEl.style.display = 'block';
+      });
+    });
+    el.addEventListener('play', () => {
+      querySelectorAll('.bgimg').forEach(bgEl => {
+        bgEl.style.display = 'none';
+      });
+    });
   });

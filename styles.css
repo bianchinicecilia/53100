@@ -1053,27 +1053,6 @@ hr {
   padding-bottom: 20px;
 }
 
-@media (max-width: 1280px) {
-
-  .content3 {
-    margin: 20px;
-  }
-
-  .columnP3 {
-    width: 100%;
-    padding: 5%;
-  }
-
-  .smallWhite {
-    font-size: 12px;
-    line-height: 1.1;
-  }
-
-  .smallSerifWhite {
-    font-size: 16px;
-  }
-
-}
 
 /* MOBILE */
 
