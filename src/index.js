@@ -65,12 +65,12 @@ if (screen.width < 600) {
   // video on mobile low power
   document.querySelectorAll('.vid').forEach(el => {
     el.addEventListener('suspend', () => {
-      querySelectorAll('.bgimg').forEach(bgEl => {
+      document.querySelectorAll('.bgimg').forEach(bgEl => {
         bgEl.style.display = 'block';
       });
     });
     el.addEventListener('play', () => {
-      querySelectorAll('.bgimg').forEach(bgEl => {
+      document.querySelectorAll('.bgimg').forEach(bgEl => {
         bgEl.style.display = 'none';
       });
     });
