@@ -199,6 +199,9 @@ a:visited {
   background-color: white;
 }
 
+.page2, page3 {
+  overflow-y: scroll;
+}
 
 .page3 {
   background-color: black;
