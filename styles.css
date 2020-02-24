@@ -197,14 +197,12 @@ a:visited {
 
 .page2 {
   background-color: white;
-}
-
-.page2, page3 {
   overflow-y: scroll;
 }
 
 .page3 {
   background-color: black;
+  overflow-y: scroll;
 }
 
 @media (max-width: 600px) {
