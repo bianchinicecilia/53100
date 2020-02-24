@@ -198,6 +198,7 @@ a:visited {
 .page2 {
   background-color: white;
   overflow-y: scroll;
+  height: auto;
 }
 
 .page3 {
