@@ -123,14 +123,6 @@ a:visited {
   background: #CCFDC5;
 }
 
-.page2, .page3 {
-    overflow: hidden scroll;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.page::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-}
 
 /* FONT */
 
@@ -207,13 +199,21 @@ a:visited {
 .page2 {
   background-color: white;
   overflow-y: scroll;
-  height: auto;
 }
 
 .page3 {
   background-color: black;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.page2, .page3 {
+    overflow: hidden scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.page::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
 }
 
 @media (max-width: 600px) {
