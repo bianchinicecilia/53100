@@ -253,6 +253,11 @@ a:visited {
   width: 100%;
 }
 
+.bgimg {
+    background-image: url('assets/imgs/grey1.png');
+    display: none;
+}
+
 .contentHP {
   min-width: 70%;
   margin: 9% 12%;

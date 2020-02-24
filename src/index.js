@@ -60,3 +60,15 @@ if (screen.width < 600) {
     });
   };
   arrow.addEventListener("click", onClick);
+
+
+  // video on mobile low power
+  const videoElement = document.getElementsByClassName('.vid');
+
+  videoElement.addEventListener('suspend', () => {
+    $(".bgimg").css("display", "block");
+  });
+
+  videoElement.addEventListener('play', () => {
+    $(".bgimg").css("display", "none");
+  });
