@@ -297,6 +297,10 @@ a:visited {
   display: flex;
 }
 
+.spacer {
+  clear: both;
+}
+
 .cta {
   min-width: 50%;
   /*float: left;*/
