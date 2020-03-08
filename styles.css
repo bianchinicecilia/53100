@@ -188,6 +188,7 @@ a:visited {
   width: 75vw;
   height: 100vh;
   position: relative;
+  overflow-y: scroll;
 }
 
 .page1 {
@@ -198,12 +199,10 @@ a:visited {
 
 .page2 {
   background-color: white;
-  overflow-y: scroll;
 }
 
 .page3 {
   background-color: black;
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -255,7 +254,7 @@ a:visited {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
   z-index: -1;
 }
@@ -674,9 +673,9 @@ hr {
 }
 
 #festival {
-  margin: 0 1%;
+  margin: 10px 13px;
   font-family: DroulersReg;
-  font-size: 8.1em;
+  font-size: 7em;
   max-height: 100%;
   float: left;
   writing-mode:tb-rl;
@@ -701,9 +700,8 @@ hr {
 #map {
   max-width: 100%;
   height: auto;
-  margin-top: 45px;
   float: left;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 /* COLUMN PAG 2 */

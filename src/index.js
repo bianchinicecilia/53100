@@ -45,6 +45,9 @@ if (screen.width < 600) {
           TweenMax.to(container, 0, { xPercent: 0 });
           currentSlide = 0;
         }
+        document.querySelectorAll(".slide").forEach(el => {
+          el.scrollTop = 0;
+        });
 
         // sequence videos
         if (currentSlide === 1) {
