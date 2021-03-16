@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <title> 53100 music and local culture</title>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="styles.css?ver=2.1" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,23 +20,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
 
     <link rel="icon" href="assets/imgs/favicon.png" sizes="16x16" type="image/png">
-
-
   </head>
+
   <body>
+
     <div class="container">
-      <div class="page page1">
-        <div class='contentHP'>
-          <div class="row1">
-            <img class="logo" src="assets/imgs/LogoBlack.png">
-          </div>
+      <div class="page">
 
+        <div class="videoHP">
+          <video class="vid" style="z-index:-1;" playsinline muted loop autoplay poster="assets/imgs/grey.png">
+            <source src="assets/videos/video-0.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="contentPage1">
+          <div class="row1"><img class="logo" src="assets/imgs/LogoBlack.png"></div>
           <div class="row2">
-            <div class="spacer"></div>
             <div class="cta">
-
               <div class="form">
-
                 <div class="subscribeTonewsletter" data-abbr="newsletter">
                   <span> subscribe to our newsletter </span>
                 </div>
@@ -53,37 +56,35 @@
                     </div>
                 </form>
                 </div>
-                <!--End mc_embed_signup-->
               </div>
-
+              <!--End mc_embed_signup-->
               <a href=" https://www.residentadvisor.net/events/1371565" target="_blank">
                 <div class="joinBox">
-                <div id="join">
-                  join the festival
+                  <div id="join">
+                    join the festival
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
-
             <div class="info">
               <div id="date">
                 <div id="days">
-                  <div id="from">
+                  <div>
                     03
                   </div>
-                  <div id="toArrow">
+                  <div>
                     <img id="arrowIcon" src="assets/imgs/arrow.png">
                   </div>
-                  <div id="to">
+                  <div>
                     05
                   </div>
                 </div>
-                <div id="month">
+                <div>
                     SEPT 2021
                 </div>
               </div>
 
-              <div id="location">
+              <div class="location">
                 <div id="home">
                 <a href="https://www.google.com/maps/place/43%C2%B024'12.4%22N+11%C2%B022'43.4%22E/@43.4034589,11.3765407,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d43.403455!4d11.3787347" target="_blank">
                   Castello di Selvole,<br>
@@ -103,60 +104,45 @@
             </div>
           </div>
         </div>
-
-        <div class="videoBG">
-          <video class="vid" style="z-index:-1;" playsinline muted loop autoplay poster="assets/imgs/grey.png">
-            <source src="assets/videos/video-0.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="videoBG bgimg"></div>
-
       </div>
 
       <div class="page page2">
-        <div id="slide2">
-              <div class = "content2">
-                <div id="festival">
-                  FESTIVAL
-                </div>
-              <div class="row">
-                <div class="columnP2a">
-                <div id="music">
-                  <div class="smallSerif">
-                    MUSIC
-                  </div>
-                  <div class="body">
-                    53100 brings a wide range of internationally respected artists
-                    to a place where the boundary-pushing fringes of electronic music are rarely represented.
-                    The Chianti area is known as a landmark for Tuscan gastronomy and wine tourism,
-                    however electronic music events have always been a rare occasion. Our lineup covers
-                    a broad musical spectrum, charting a winding course between ambient,
-                    mutant bass and breaks, otherworldly frequencies and plenty more besides.
-                  </div>
-                </div>
-                <div id="localCulture">
-                  <div class="smallSerif">
-                    LOCAL CULTURE
-                  </div>
-                  <div class="body">
-                    53100 provides the opportunity for you
-                    to fully immerse yourself in the beautiful natural landscape
-                    of our region: forests of oak and chestnut, undulating hills,
-                    olive trees and sun-kissed vineyards that stretch towards the horizon.
-                    All the while, you will enjoy a carefully crafted menu of Tuscany’s
-                    renowned food and wine, informed by the unique geography
-                    of our land and the produce of the season.
-                  </div>
-                </div>
-
-              </div>
-              <div class="columnP2b">
-                  <img id="map" src="assets/imgs/map2.png">
-                </div>
-              </div>
+      <div class="contentPage2">
+        <div class="contentLeft">
+          <div class="page2column1" id="festival">
+              FESTIVAL
+          </div>
+        </div>
+        <div class="contentRight">
+          <div class="page2column2">
+            <div class="smallSerif">
+                MUSIC
             </div>
+            <div class="body">
+              53100 brings a wide range of internationally respected artists
+              to a place where the boundary-pushing fringes of electronic music are rarely represented.
+              The Chianti area is known as a landmark for Tuscan gastronomy and wine tourism,
+              however electronic music events have always been a rare occasion. Our lineup covers
+              a broad musical spectrum, charting a winding course between ambient,
+              mutant bass and breaks, otherworldly frequencies and plenty more besides.
             </div>
+            <div class="smallSerif">
+              LOCAL CULTURE
+            </div>
+            <div class="body">
+              53100 provides the opportunity for you
+              to fully immerse yourself in the beautiful natural landscape
+              of our region: forests of oak and chestnut, undulating hills,
+              olive trees and sun-kissed vineyards that stretch towards the horizon.
+              All the while, you will enjoy a carefully crafted menu of Tuscany’s
+              renowned food and wine, informed by the unique geography              of our land and the produce of the season.
+            </div>
+          </div>
+          <div class="page2column3">
+            <img id="map" src="assets/imgs/map2.png">
+          </div>
+        </div>
+      </div>
       </div>
 
       <div class="page page3">
@@ -217,43 +203,6 @@
             </div>
 
             <li class="uk-open uk-text-primary">
-                <a class="uk-accordion-title uk-text-primary smallSerifWhite" href="#">ACCOMODATION</a>
-                <div class="uk-accordion-content">
-                    <div class="smallWhite">
-
-                    CAMPING: <br>
-                    The Castello di Selvole is located on top of a hill and is surrounded by vineyards and forests.
-                    For this reason, there’s no level ground for a camp site that is big enough for all of our guests.
-                    Worry not - we’ve teamed up with the Camping Colleverde, a beautiful green oasis located
-                    a short drive from the festival site and 900m from Siena’s city center. We’ll provide
-                    a free 20 min shuttle service between the camp site and the festival for the whole duration of the festival.<br>
-                    The camping offers a variety of accommodation options for guests.
-                    This could be a 2 person tent, a mobile home for 4 or 5 people or
-                    a garden where you can pitch your tent under the shade of a tree.
-                    There will be an area at the camping site that is specifically reserved for the guests of 53100.
-                    You can book your camping best by visiting the <a href="https://www.sienacamping.com" target="_blank">website</a>
-                    or by emailing Lene at: <a href="mailto:info@sienacamping.com?" target="_top">info@sienacamping.com</a> <br>
-                    When reaching out to Camping Colleverde,
-                    don't forget to mention you're a guest of 53100 for a 10% price reduction.
-                    <br><br>
-
-                    ON SITE: <br>
-                    The Castello di Selvole specialises in agritourism with 20 apartments available for our guests.
-                    These apartments can accommodate groups of either  4 or 6 people. By renting an apartment,
-                    you’ll have the convenience of waking up on the festival site,
-                    </div>
-                </div>
-            </li>
-            </div>
-            <div class="columnP3" id="column3P3">
-              <div class="smallWhite">
-
-                surrounded by a captivating view of the vineyards. Additionally, Selvole’s guests will be able to attend the Friday evening festival programme, hosted in collaboration with Berlin based experimental station, Cashmere Radio.
-                An all-inclusive Tuscan dinner is also included in the price of this accommodation. Please note that if booking an on-site apartment you won’t need to purchase a membership from RA, as this is also covered in the apartment’s fee.
-                If you wish to enquire about on-site apartments, please get in touch: <a href="mailto:accommodation@53100.org?" target="_top"> accommodation@53100.org </a>
-              </div>
-
-            <li class="uk-open uk-text-primary">
                 <a class="uk-accordion-title uk-text-primary smallSerifWhite" href="#">ACCESS</a>
                 <div class="uk-accordion-content">
                   <div class="smallWhite">
@@ -274,6 +223,32 @@
                   </div>
                 </div>
             </li>
+
+            <li class="uk-open uk-text-primary">
+                <a class="uk-accordion-title uk-text-primary smallSerifWhite" href="#">SOME WORDS ABOUT THE FESTIVAL POSTPONEMENT...</a>
+                <div class="uk-accordion-content">
+                  <div class="smallWhite">
+                    For us, this has been a year full of first times. From the pandemic to the production of our little festival, we’ve spent a lot of time grappling with a new range of issues. Some of these were expected, some others took us by surprise. Here we are, having to postpone an event for our first time as event producers. By now the full line-up would have been announced and we'd be communicating the aims, beliefs and goals that we have channelled into this project. However, the reality is that the current situation in Italy is uncertain. The government has not provided any clear directive regarding the return of musical events and we fear the reopening of the Italian scene might be more challenging than initially expected.
+                  </div>
+                </div>
+            </li>
+          </div>
+          <div class="columnP3" id="column3P3">
+              <div class="smallWhite">
+                Although we have been optimistic for some time, we are now in a position where we are no longer able to plan ahead and work as we normally would, hence putting at risk not just this year's festival edition, but potentially the health of those in attendance. As we begin working towards 2021, we continue to observe the unfolding of this unprecedented force of change within and around us, curious to take part in the different world that awaits us. We want to thank you all for your support and trust. We wish everyone the best of health, strength and positivity.
+              </div>
+
+              <li class="uk-open uk-text-primary">
+                  <a class="uk-accordion-title uk-text-primary smallSerifWhite" href="#">PRACTICAL INFORMATION:</a>
+                  <div class="uk-accordion-content">
+                    <div class="smallWhite">
+                      • 53100 is postponed to 3-5th September 2021 <br><br>
+                      • All purchases (including memberships and apartment bookings) will be valid for the new date <br><br>
+                      • If you have purchased a membership, you will be contacted by RA shortly with the option to either refund your purchase or keep it for next year.<br><br>
+                      • If you have purchased accommodation at Castello di Selvole, you can reach out to <a href="mailto:accommodation@53100.org?" target="_top">accommodation@53100.org</a> regarding your booking <br>
+                    </div>
+                  </div>
+              </li>
           </div>
         </ul>
 
@@ -287,6 +262,7 @@
             COORDINATES <br> 43.403455, 11.3787347 <br>
           </div>
         </div>
+      </div>
 
         <ul uk-accordion="multiple: true" class="uk-text-danger uk-hidden@s">
 
@@ -387,11 +363,13 @@
         </ul>
       </div>
       </div>
+      </div>
     </div>
-    </div>
+    <button id="arrow"></button>
 
-  <button id="arrow"></button>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-      <script src="src/index.js?ver=1.1"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="src/index.js?ver=1.1"></script>
+
+  </body>
+
 </html>
